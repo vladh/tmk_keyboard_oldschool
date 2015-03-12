@@ -135,7 +135,7 @@ static void command_common_help(void)
     print("4/F4:	switch to Layer4 \n");
     print("PScr:	power down/remote wake-up\n");
     print("Caps:	Lock Keyboard(Child Proof)\n");
-    print("Paus:	jump to bootloader\n");
+    print("Bspc:	jump to bootloader\n");
 }
 
 #ifdef BOOTMAGIC_ENABLE
@@ -216,7 +216,7 @@ static bool command_common(uint8_t code)
             print("C> ");
             command_state = CONSOLE;
             break;
-        case KC_PAUSE:
+        case KC_BSPC:
             clear_keyboard();
             print("\n\nJump to bootloader... ");
             _delay_ms(1000);
