@@ -8,7 +8,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                      LSFT, Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH,    RSFT,    UP,   VOLD, \
                      LCTL,    LALT,  LGUI,   SPC,     FN1,    SPC,       BSPC, KANA, RCTL, LEFT,   DOWN, RGHT),
     /* 1: FN keys and more Mac media keys */
-    [1] = KEYMAP_ASK(TRNS, F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,     TRNS, \
+    [1] = KEYMAP_ASK(TRNS, F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,     FN11, \
                      TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, P7,   P8,   P9, TRNS, TRNS, TRNS,  MUTE, \
                      TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, P4,   P5,   P6, TRNS,    TRNS,     MNXT, \
                      TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, P1,   P2,   P3,    TRNS,    TRNS,  MPRV, \
@@ -21,7 +21,8 @@ enum macro_id {
 
 const uint16_t PROGMEM fn_actions[] = {
   [1] = ACTION_LAYER_MOMENTARY(1),
-  [10] = ACTION_MACRO(MACRO0)
+  [10] = ACTION_MACRO(MACRO0),
+  [11] = ACTION_MODS_KEY(MOD_LSFT | MOD_RSFT, KC_PAUSE)
 };
 
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
