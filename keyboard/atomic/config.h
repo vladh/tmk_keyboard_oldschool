@@ -20,8 +20,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define VENDOR_ID       0xFEED  // Ortholinear Keyboards
+#define PRODUCT_ID      0x6060  // Atomic Keyboard
+/* #define VENDOR_ID       0x1d50  // Openmoko, Inc. */
+/* #define PRODUCT_ID      0x6028  // ErgoDox ergonomic keyboard */
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Ortholinear Keyboards
 #define PRODUCT         Atomic Keyboard
