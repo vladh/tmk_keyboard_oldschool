@@ -11,7 +11,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = KEYMAP_ASK(TRNS, F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,     FN20, \
                      TRNS, F19,  F20,  F21, TRNS, TRNS, TRNS, P7,   P8,   P9,   NUMLOCK, TRNS, TRNS, TRNS,  MUTE, \
                      FN21, F16,  F17,  F18, TRNS, TRNS, TRNS, P4,   P5,   P6,   TRNS,    TRNS,    TRNS,     MNXT, \
-                     TRNS, F13,  F14,  F15, BTN4, TRNS, TRNS, P1,   P2,   P3,   TRNS,       TRNS,    TRNS,  MPRV, \
+                     TRNS, F13,  F14,  F15, TRNS, TRNS, TRNS, P1,   P2,   P3,   TRNS,       TRNS,    TRNS,  MPRV, \
                      TRNS,  TRNS,  TRNS,   TRNS,     TRNS,     P0,    DEL,  TRNS,   TRNS,  TRNS,  TRNS,  TRNS)
 };
 
